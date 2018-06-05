@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Carro</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Nome</ion-label>
+    <ion-input type="text" [(ngModel)]="car.name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Marca</ion-label>
+    <ion-input type="text" [(ngModel)]="car.brand"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Modelo</ion-label>
+    <ion-input type="text" [(ngModel)]="car.model"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Imagen</ion-label>
+    <ion-input type="text" [(ngModel)]="car.img"></ion-input>
+  </ion-item>
+
+  <button ion-button block (click)="save()">Salvar</button>
+
+</ion-content>
